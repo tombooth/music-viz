@@ -1,0 +1,19 @@
+{
+  "name": "soundcloud-dj",
+  "version": "0.1.0",
+  "description": "",
+  "repository": "https://github.com/tombooth/soundcloud-dj.git",
+  "author": {
+    "name": "Tom Booth",
+    "email": "tombooth@gmail.com",
+    "url": "http://thomasbooth.co.uk"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-blueprints": "~0.1.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-concat": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.6.0"
+  }
+}
