@@ -1,5 +1,5 @@
 
-soundcloud-dj
+Music Viz
 ================================
 
 Under active development
