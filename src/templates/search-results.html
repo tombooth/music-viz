@@ -1,0 +1,13 @@
+<ul class="search-results">
+   ##if (searching) {##
+   <li>Searching for tracks...</li>
+   ##} else if (error) {##
+   <li>##= error##</li>
+   ##} else if (!results || result.length === 0) {
+   <li>Found no tracks for this query.</li>
+   ##} else {##
+   ##results.forEach(function(result) {##
+   <li><a href="##= result.stream_url##">##= result.title##</a></li>
+   ##});##
+   ##}##
+</ul>

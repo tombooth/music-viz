@@ -1,8 +1,8 @@
 {
-  "name": "soundcloud-dj",
+  "name": "music-viz",
   "version": "0.1.0",
   "description": "",
-  "repository": "https://github.com/tombooth/soundcloud-dj.git",
+  "repository": "https://github.com/tombooth/music-viz.git",
   "author": {
     "name": "Tom Booth",
     "email": "tombooth@gmail.com",

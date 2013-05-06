@@ -1,0 +1,324 @@
+
+html {
+   height: 100%;
+}
+
+body { 
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-size: 14px;
+}
+
+.hidden {
+   display: none;
+}
+
+h1, h2, h3 {
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   font-size: 2.2em;
+}
+
+a {
+   color: black;
+}
+
+a:hover {
+   color: red;
+}
+
+input {
+   font-size: 14px;
+}
+
+input[type=text],
+input[type=password] {
+   display: block;
+   border: 1px solid #eee;
+   padding: 5px;
+   margin: 0;
+}
+
+input[type=text]:hover,
+input[type=password]:hover {
+   border: 1px solid #ccc;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+   border: 1px solid #999;
+   outline: none;
+}
+
+input[disabled] {
+   color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+.tweaker {
+   z-index: 10;
+   background-color: white;
+}
+
+.tweaker.right.open,
+.tweaker.left.open {
+   width: 500px;
+}
+
+.tweaker.bottom.open,
+.tweaker.top.open {
+   height: 200px;
+}
+
+.tweaker.right,
+.tweaker.left {
+   position: absolute;
+   top: 0px;
+   bottom: 0px;
+}
+
+.tweaker.right {
+   right: 0px;
+   width: 40px;
+   border-left: 1px solid black;
+}
+
+.tweaker.left {
+   left: 0px;
+   width: 40px;
+   border-right: 1px solid black;
+}
+
+.tweaker.bottom,
+.tweaker.top {
+   position: fixed;
+   left: 0px;
+   right: 0px;
+}
+
+.tweaker.bottom {
+   bottom: 0px;
+   height: 40px;
+   border-top: 1px solid black;
+}
+
+.tweaker.top {
+   top: 0px;
+   height: 40px;
+   border-bottom: 1px solid black;
+}
+
+.tweaker .panels, 
+.tweaker .tools {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   text-transform: uppercase;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.tweaker.right .panels,
+.tweaker.right .tools {
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.tweaker.left .panels,
+.tweaker.left .tools {
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.tweaker.bottom .panels,
+.tweaker.bottom .tools,
+.tweaker.top .panels,
+.tweaker.top .tools {
+   line-height: 40px;
+}
+
+.tweaker.right .panels,
+.tweaker.left .panels {
+   width: 250px;
+   margin-top: 130px;
+   margin-left: -104px;
+}
+
+.tweaker.open.left .panels {
+   margin-left: 356px;
+}
+
+.tweaker.bottom .panels,
+.tweaker.top .panels {
+   position: absolute;
+   left: 12px;
+}
+
+.tweaker.bottom .panels {
+   top: 0px;
+}
+
+.tweaker.top .panels {
+   bottom: 0px;
+}
+
+.tweaker .tools {
+   position: absolute;
+}
+
+.tweaker.right .tools,
+.tweaker.left .tools {
+   bottom: 12px;
+}
+
+.tweaker.right .tools {
+   left: 4px;
+}
+
+.tweaker.left .tools {
+   right: 4px;
+}
+
+.tweaker.bottom .tools,
+.tweaker.top .tools {
+   right: 12px;
+}
+
+.tweaker.bottom .tools {
+   top: 0px;
+}
+
+.tweaker.top .tools {
+   bottom: 0px;
+}
+
+.tweaker .panel {
+   position: absolute;
+   padding: 10px;
+   overflow: auto;
+}
+
+.tweaker.right .panel,
+.tweaker.left .panel {
+   top: 0px;
+   bottom: 0px;
+}
+
+.tweaker.right .panel {
+   left: 40px;
+   right: 0px;
+   border-left: 1px solid #eee;
+}
+
+.tweaker.left .panel {
+   left: 0px;
+   right: 40px;
+   border-right: 1px solid #eee;
+}
+
+.tweaker.bottom .panel,
+.tweaker.top .panel {
+   left: 0px;
+   right: 0px;
+}
+
+.tweaker.bottom .panel {
+   top: 40px;
+   bottom: 0px;
+   border-top: 1px solid #eee;
+}
+
+.tweaker.top .panel {
+   top: 0px;
+   bottom: 40px;
+   border-bottom: 1px solid #eee;
+}
+
+.tweaker .panel.hidden {
+   display: none;
+}
+
+.tweaker .link-item {
+   display: inline-block;
+   margin-right: 8px;
+}
+
+.tweaker .link-item a {
+   color: black;
+}
+
+.tweaker .link-item a:hover,
+.tweaker .link-item a.selected {
+   color: red;
+}
+
+
+
+
+.status {
+   position: fixed;
+   bottom: 20px;
+   left: 20px;
+}
+
+.music .search {
+   width: 410px;
+}
+
+.search-results {
+   padding: 0;
+   margin: 0;
+}
+
+.search-results li {
+   list-style: none;
+   padding: 10px 5px;
+   border-bottom: 1px solid #eee;
+}
+
+.now-playing {
+   margin-bottom: 10px;
+}
+
+.progress,
+.progress .loading,
+.progress .playing {
+   height: 10px;
+}
+
+.progress {
+   position: relative;
+   margin: 5px 0;
+}
+
+.progress .loading,
+.progress .playing {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.progress .loading {
+   background-color: #f5f5f5;
+}
+
+.progress .playing {
+   background-color: #ddd;
+}

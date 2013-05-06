@@ -1,0 +1,9 @@
+[submodule "deps/tweaker.js"]
+	path = deps/tweaker.js
+	url = https://github.com/tombooth/tweaker.js.git
+[submodule "deps/subscribable"]
+	path = deps/subscribable
+	url = https://github.com/steveukx/Subscribable.git
+[submodule "deps/three.js"]
+	path = deps/three.js
+	url = https://github.com/mrdoob/three.js.git
