@@ -8,7 +8,7 @@
    document.body.appendChild(blueprints("structure"));
 
    var settings = new Tweaker(document.querySelector('.settings')),
-       context = new webkitAudioContext(),
+       context = new (window.webkitAudioContext || window.AudioContext)(),
        analyserNode = context.createAnalyser(),
        nowPlaying = new NowPlaying(document.querySelector('.now-playing'), context),
        search = new Search(document.querySelector('.search-container'), clientId),
@@ -46,6 +46,8 @@
       domainViz.stop();
       source.disconnect();
    });
+
+   nowPlaying.on('error', function() { console.log('now playing error', arguments); });
 
    handleSelected('The XX - Together', 'http://api.soundcloud.com/tracks/89234832/stream?client_id=a68782f824e72d49f29bb6e06b4bf29c');
 

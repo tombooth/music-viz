@@ -50,10 +50,8 @@
    DomainViz.prototype._render = function() {
 
       var freqBuffer, timeBuffer;
-      console.log('rednering');
 
       if (this._running) requestAnimationFrame( this._render.bind(this) );
-
 
       freqBuffer = new Uint8Array(this._analyserNode.frequencyBinCount);
       timeBuffer = new Uint8Array(this._analyserNode.frequencyBinCount);
