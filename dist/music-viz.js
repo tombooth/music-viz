@@ -39212,6 +39212,6 @@ window.blueprints = blueprints;
 
    nowPlaying.on('error', function() { console.log('now playing error', arguments); });
 
-   handleSelected('The XX - Together', '/xx.wav');
+   handleSelected('The XX - Together', 'http://api.soundcloud.com/tracks/89234832/stream?client_id=a68782f824e72d49f29bb6e06b4bf29c');
 
 }());
